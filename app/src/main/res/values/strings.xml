@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Appsolute test app</string>
+    <string name="api_base_url">https://rickandmortyapi.com/api</string>
+</resources>
