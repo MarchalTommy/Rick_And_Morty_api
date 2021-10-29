@@ -1,4 +1,6 @@
 package com.aki.appsolutetestapp.ui.detail
 
-class EpisodeDetailViewModel {
+import androidx.lifecycle.ViewModel
+
+class EpisodeDetailViewModel: ViewModel() {
 }

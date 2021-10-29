@@ -1,4 +1,6 @@
 package com.aki.appsolutetestapp.ui.detail
 
-class LocationDetailViewModel {
+import androidx.lifecycle.ViewModel
+
+class LocationDetailViewModel: ViewModel() {
 }

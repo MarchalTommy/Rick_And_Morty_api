@@ -1,4 +1,4 @@
-package com.aki.appsolutetestapp.ui.detail
+package com.aki.appsolutetestapp.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,27 +7,25 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.aki.appsolutetestapp.R
-import com.aki.appsolutetestapp.ui.main.CharacterListFragment
-import com.aki.appsolutetestapp.ui.main.CharacterListViewModel
 
-class EpisodeDetailFragment : Fragment() {
+class MainFragment : Fragment() {
 
     companion object {
-        fun newInstance() = EpisodeDetailFragment()
+        fun newInstance() = MainFragment()
     }
 
-    private lateinit var viewModel: EpisodeDetailViewModel
+    private lateinit var viewModel: MainFragmentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.episode_detail_fragment, container, false)
+        return inflater.inflate(R.layout.main_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(EpisodeDetailViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(MainFragmentViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

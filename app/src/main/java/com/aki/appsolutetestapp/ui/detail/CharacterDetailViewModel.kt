@@ -1,4 +1,6 @@
 package com.aki.appsolutetestapp.ui.detail
 
-class CharacterDetailViewModel {
+import androidx.lifecycle.ViewModel
+
+class CharacterDetailViewModel: ViewModel() {
 }

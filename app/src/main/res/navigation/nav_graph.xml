@@ -3,11 +3,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/mainFragment2">
 
     <fragment
-        android:id="@+id/mainFragment"
+        android:id="@+id/mainFragment2"
+        android:name="com.aki.appsolutetestapp.ui.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment2_to_characterListFragment"
+            app:destination="@id/characterListFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_locationListFragment"
+            app:destination="@id/locationListFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_episodeListFragment"
+            app:destination="@id/episodeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterListFragment"
         android:name="com.aki.appsolutetestapp.ui.main.CharacterListFragment"
         android:label="character_list_fragment"
-        tools:layout="@layout/character_list_fragment" />
+        tools:layout="@layout/character_list_fragment" >
+        <action
+            android:id="@+id/action_characterListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+        <action
+            android:id="@+id/action_characterListFragment_to_episodeDetailFragment"
+            app:destination="@id/episodeDetailFragment" />
+        <action
+            android:id="@+id/action_characterListFragment_to_locationDetailFragment"
+            app:destination="@id/locationDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/episodeListFragment"
+        android:name="com.aki.appsolutetestapp.ui.main.EpisodeListFragment"
+        android:label="EpisodeListFragment" >
+        <action
+            android:id="@+id/action_episodeListFragment_to_episodeDetailFragment"
+            app:destination="@id/episodeDetailFragment" />
+        <action
+            android:id="@+id/action_episodeListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+        <action
+            android:id="@+id/action_episodeListFragment_to_locationDetailFragment"
+            app:destination="@id/locationDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationListFragment"
+        android:name="com.aki.appsolutetestapp.ui.main.LocationListFragment"
+        android:label="LocationListFragment" >
+        <action
+            android:id="@+id/action_locationListFragment_to_locationDetailFragment"
+            app:destination="@id/locationDetailFragment" />
+        <action
+            android:id="@+id/action_locationListFragment_to_characterDetailFragment"
+            app:destination="@id/characterDetailFragment" />
+        <action
+            android:id="@+id/action_locationListFragment_to_episodeDetailFragment"
+            app:destination="@id/episodeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.aki.appsolutetestapp.ui.detail.CharacterDetailFragment"
+        android:label="CharacterDetailFragment" />
+    <fragment
+        android:id="@+id/episodeDetailFragment"
+        android:name="com.aki.appsolutetestapp.ui.detail.EpisodeDetailFragment"
+        android:label="EpisodeDetailFragment" />
+    <fragment
+        android:id="@+id/locationDetailFragment"
+        android:name="com.aki.appsolutetestapp.ui.detail.LocationDetailFragment"
+        android:label="LocationDetailFragment" />
 </navigation>
