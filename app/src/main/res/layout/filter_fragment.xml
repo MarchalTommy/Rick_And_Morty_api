@@ -3,4 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<!--  episode -> name / code  -->
+<!--  location -> name / type / dimension  -->
+<!--  character -> name / status (alive, dead, unknown) / species / type / gender  -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

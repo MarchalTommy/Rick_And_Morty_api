@@ -37,7 +37,8 @@
     <fragment
         android:id="@+id/episodeListFragment"
         android:name="com.aki.appsolutetestapp.ui.main.EpisodeListFragment"
-        android:label="EpisodeListFragment" >
+        android:label="EpisodeListFragment"
+        tools:layout="@layout/episode_list_fragment">
         <action
             android:id="@+id/action_episodeListFragment_to_episodeDetailFragment"
             app:destination="@id/episodeDetailFragment" />
@@ -51,7 +52,8 @@
     <fragment
         android:id="@+id/locationListFragment"
         android:name="com.aki.appsolutetestapp.ui.main.LocationListFragment"
-        android:label="LocationListFragment" >
+        android:label="LocationListFragment"
+        tools:layout="@layout/location_list_fragment">
         <action
             android:id="@+id/action_locationListFragment_to_locationDetailFragment"
             app:destination="@id/locationDetailFragment" />
@@ -65,13 +67,16 @@
     <fragment
         android:id="@+id/characterDetailFragment"
         android:name="com.aki.appsolutetestapp.ui.detail.CharacterDetailFragment"
-        android:label="CharacterDetailFragment" />
+        android:label="CharacterDetailFragment"
+        tools:layout="@layout/character_detail_fragment"/>
     <fragment
         android:id="@+id/episodeDetailFragment"
         android:name="com.aki.appsolutetestapp.ui.detail.EpisodeDetailFragment"
-        android:label="EpisodeDetailFragment" />
+        android:label="EpisodeDetailFragment"
+        tools:layout="@layout/episode_detail_fragment"/>
     <fragment
         android:id="@+id/locationDetailFragment"
         android:name="com.aki.appsolutetestapp.ui.detail.LocationDetailFragment"
-        android:label="LocationDetailFragment" />
+        android:label="LocationDetailFragment"
+        tools:layout="@layout/location_detail_fragment"/>
 </navigation>
